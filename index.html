@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#46CBF8" />
+    <meta
+      name="description"
+      content="Unlock the best digital tools for enhancing your gaming experience. High-performance executors, scripts, and exclusive Roblox accounts with fast delivery and responsive support."
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/reisploits_favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/reisploits_favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/reisploits_favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href="https://reosploits.mykomerza.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.komerza.com/komerza.min.js"></script>
+    <!-- <script src="http://localhost:3000/dist/komerza.js"></script> -->
+    <script>
+      function initKomerza() {
+        if (typeof globalThis.komerza !== "undefined") {
+          globalThis.komerza.init("de1f4918-96a7-4383-b6ae-75c730c180b2");
+        } else {
+          setTimeout(initKomerza, 100);
+        }
+      }
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      localStorage.setItem("theme", "dark");
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initKomerza);
+      } else {
+        initKomerza();
+      }
+    </script>
+    <title>Roesploits - Premium Gaming Tools & Executors</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
